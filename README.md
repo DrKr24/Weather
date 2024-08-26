@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# Веб-додаток
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+_Проект є додатком прогнозу погоди, що візуалізує та кешує дані на основі ланцюгу API запитів._
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Функціонал
 
-## Expanding the ESLint configuration
+  1. Запит інформації о країні(області, міста, села)
+  2. Запит метеорологічної інформації по назві населеного пункту
+  3. Візуалізація основної інформації
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Технології
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+  1. ReactJS
+  2. CSS
+  3. TSX
+  4. Redux
+  5. React-Thunk
+  6. Axios
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Структура
+  - src        | всі файли, що стосується додатку.
+  - components | всі компоненти з функціоналом
+  - utils      | додаткові фунції(кешування, запити, робота з кольорами)
+  - store      | всі файли стосовно Redux
+  - types      | типи для коректної роботи з Typescript
+  - hooks      | кастомні хуки
+
+
+## Гілки
+
+  1. main     | основні файли проекту
+
+     
+## Відображеня 
+
+  🖥️ 💻 ⬛ 📱
+  
+     
+## Посилання
+
+  Нажаль github погано працює з з http запитами тому рекомендую встановити додаток!
+  [Додаток](https://drkr24.github.io/Weather/)
