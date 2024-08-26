@@ -1,0 +1,73 @@
+.btnRefresh {
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btnRefresh > img {
+  width: 30px;
+}
+
+.loader {
+  position: relative;
+  width: 130px;
+  height: 66px;
+  margin-inline: auto;
+  top: 40px;
+  color: #ebebeb;
+  --c: radial-gradient(farthest-side, currentColor 96%, #0000);
+  background: var(--c) 100% 100% /30% 60%, var(--c) 70% 0 /50% 100%,
+    var(--c) 0 100% /36% 68%, var(--c) 27% 18% /26% 40%,
+    linear-gradient(#dfe4e7 0 0) bottom/67% 58%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  opacity: 0.7;
+  animation: l7 3s infinite;
+}
+@keyframes l7 {
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.inputLoader {
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 15px;
+  --m: no-repeat linear-gradient(90deg, #000 70%, #0000 0);
+  -webkit-mask: var(--m) calc(0 * 100% / 4) 100% / calc(100% / 5)
+      calc(1 * 100% / 5),
+    var(--m) calc(1 * 100% / 4) 100% / calc(100% / 5) calc(2 * 100% / 5),
+    var(--m) calc(2 * 100% / 4) 100% / calc(100% / 5) calc(3 * 100% / 5),
+    var(--m) calc(3 * 100% / 4) 100% / calc(100% / 5) calc(4 * 100% / 5),
+    var(--m) calc(4 * 100% / 4) 100% / calc(100% / 5) calc(5 * 100% / 5);
+  background: linear-gradient(#7e7d7f 0 0) left/0% 100% no-repeat #ddd;
+  animation: l14 2s infinite steps(6);
+}
+
+@keyframes l14 {
+  100% {
+    background-size: 120% 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .loader {
+    width: 120px;
+    height: 66px;
+    top: 45px;
+  }
+}

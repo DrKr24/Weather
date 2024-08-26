@@ -1,0 +1,69 @@
+.inputContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.inputText {
+  padding: 10px 5px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  outline: 1px solid rgb(148, 146, 146);
+  max-width: 220px;
+  width: 220px;
+  font-size: 16px;
+  color: rgb(37, 34, 34);
+  letter-spacing: 0.05rem;
+  padding-right: 40px;
+}
+
+.inputText:focus {
+  outline: 1px solid rgb(12, 173, 49);
+}
+
+.tooltip {
+  top: 40px;
+  position: absolute;
+  z-index: 1;
+  max-height: 50vh;
+  overflow-y: scroll;
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  outline: 1px solid rgb(177, 174, 174);
+  background-color: rgb(255, 255, 255);
+  width: 220px;
+  max-width: 220px;
+  color: rgb(37, 34, 34);
+}
+
+@media (max-width: 670px) {
+  .inputText {
+    max-width: 180px;
+    width: 180px;
+    font-size: 14px;
+    letter-spacing: 0.03rem;
+  }
+  .tooltip {
+    top: 40px;
+    max-width: 180px;
+    width: 180px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .inputContainer {
+    width: 100%;
+  }
+  .inputText {
+    max-width: 100%;
+    width: 100%;
+  }
+  .tooltip {
+    max-width: 100%;
+    width: 100%;
+  }
+}

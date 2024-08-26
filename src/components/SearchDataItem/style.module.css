@@ -1,0 +1,13 @@
+.tooltipItem {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+  cursor: pointer;
+}
+
+.tooltipItem:hover {
+  background-color: #eee8e8;
+}

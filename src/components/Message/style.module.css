@@ -1,0 +1,18 @@
+.messageContainer {
+  margin-inline: auto;
+  position: relative;
+  top: 50px;
+}
+
+.messageText {
+  color: #7c7e7e;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+@media (max-width: 550px) {
+  .messageText {
+    font-size: 18px;
+  }
+}
